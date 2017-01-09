@@ -11,6 +11,7 @@ $(document).ready(function(){
           // alert("Your are scrolling");
           $('#sababaNav').css('background-color', 'rgba(255,255,255,0.9');
           $('#sababaNav').css('border-radius', '10px');
+
        } else {
           $('#sababaNav').css('background-color', 'transparent');
        }
