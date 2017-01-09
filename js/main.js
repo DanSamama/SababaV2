@@ -1,32 +1,24 @@
+
+//Navbar change background color when scrolling
+
+$(document).ready(function(){
+   var scroll_start = 0;
+   var startchange = $('#home');
+   var offset = startchange.offset();
+   $(document).scroll(function() {
+      scroll_start = $(this).scrollTop();
+      if(scroll_start > offset.top) {
+          // alert("Your are scrolling");
+          $('#sababaNav').css('background-color', 'rgba(255,255,255,0.9');
+          $('#sababaNav').css('border-radius', '10px');
+       } else {
+          $('#sababaNav').css('background-color', 'transparent');
+       }
+   });
+});
+
 jQuery(function($) {'use strict',
 
-	
-	// all Parallax Section
-	// $(window).load(function(){'use strict',
-	// 	$("#services").parallax("50%", 0.3);
-	// 	$("#clients").parallax("50%", 0.3);
-	// });
-	
-	// portfolio filter
-	// $(window).load(function(){'use strict',
-	// 	$portfolio_selectors = $('.portfolio-filter >li>a');
-	// 	if($portfolio_selectors!='undefined'){
-	// 		$portfolio = $('.portfolio-items');
-	// 		$portfolio.isotope({
-	// 			itemSelector : '.col-sm-3',
-	// 			layoutMode : 'fitRows'
-	// 		});
-	//
-	// 		$portfolio_selectors.on('click', function(){
-	// 			$portfolio_selectors.removeClass('active');
-	// 			$(this).addClass('active');
-	// 			var selector = $(this).attr('data-filter');
-	// 			$portfolio.isotope({ filter: selector });
-	// 			return false;
-	// 		});
-	// 	}
-	// });
-	
 	//Pretty Photo
 	 $("a[data-gallery^='prettyPhoto']").prettyPhoto({
 	  social_tools: false
@@ -90,21 +82,20 @@ function Scroll() {
 		if ( winTop > contentTop[i] - rangeTop ){
 			$('.navbar-collapse li.scroll')
 			.removeClass('active')
-			.eq(i).addClass('active');			
+			.eq(i).addClass('active');
 		}
 	})
 
 };
 
 
-	// Skill bar Function
-
-	jQuery(document).ready(function(){
-	jQuery('.skillbar').each(function(){
-		jQuery(this).find('.skillbar-bar').animate({
-			width:jQuery(this).attr('data-percent')
-		},6000);
-	});
-});
-
+// 	// Skill bar Function
+//
+// 	jQuery(document).ready(function(){
+// 	jQuery('.skillbar').each(function(){
+// 		jQuery(this).find('.skillbar-bar').animate({
+// 			width:jQuery(this).attr('data-percent')
+// 		},6000);
+// 	});
+// });
 
