@@ -11,9 +11,16 @@ $(document).ready(function(){
           // alert("Your are scrolling");
           $('#sababaNav').css('background-color', 'rgba(255,255,255,0.9');
           $('#sababaNav').css('border-radius', '10px');
+          $('#logoSab').css('border-radius', '13px');
+          $('#logoSab').css('background-color', '#91CCF4');
+          $('#logoSab').css('padding', '6px');
+
 
        } else {
           $('#sababaNav').css('background-color', 'transparent');
+          $('#logoSab').css('padding', '0px');
+          $('#logoSab').css('background-color', 'transparent');
+          $('#logoSab').css('border-radius', '0px');
        }
    });
 });
@@ -38,9 +45,9 @@ jQuery(function($) {'use strict',
 
 
 	// Navigation Scroll
-	$(window).scroll(function(event) {
-		Scroll();
-	});
+	// $(window).scroll(function(event) {
+	// 	Scroll();
+	// });
 
 	$('.navbar-collapse ul li a').click(function() {  
 		$('html, body').animate({scrollTop: $(this.hash).offset().top - 79}, 1000);
@@ -69,25 +76,25 @@ jQuery(window).load(function(){'use strict';
 
 
 // User define function
-function Scroll() {
-	var contentTop      =   [];
-	var contentBottom   =   [];
-	var winTop      =   $(window).scrollTop();
-	var rangeTop    =   200;
-	var rangeBottom =   500;
-	$('.navbar-collapse').find('.scroll a').each(function(){
-		contentTop.push( $( $(this).attr('href') ).offset().top);
-		contentBottom.push( $( $(this).attr('href') ).offset().top + $( $(this).attr('href') ).height() );
-	})
-	$.each( contentTop, function(i){
-		if ( winTop > contentTop[i] - rangeTop ){
-			$('.navbar-collapse li.scroll')
-			.removeClass('active')
-			.eq(i).addClass('active');
-		}
-	})
-
-};
+// function Scroll() {
+// 	var contentTop      =   [];
+// 	var contentBottom   =   [];
+// 	var winTop      =   $(window).scrollTop();
+// 	var rangeTop    =   200;
+// 	var rangeBottom =   500;
+// 	$('.navbar-collapse').find('.scroll a').each(function(){
+// 		contentTop.push( $( $(this).attr('href') ).offset().top);
+// 		contentBottom.push( $( $(this).attr('href') ).offset().top + $( $(this).attr('href') ).height() );
+// 	})
+// 	$.each( contentTop, function(i){
+// 		if ( winTop > contentTop[i] - rangeTop ){
+// 			$('.navbar-collapse li.scroll')
+// 			.removeClass('active')
+// 			.eq(i).addClass('active');
+// 		}
+// 	})
+//
+// };
 
 
 // 	// Skill bar Function

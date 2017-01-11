@@ -254,7 +254,12 @@ a.navButton {
     border-radius: 13px;
     opacity:0.78;
 }
-
+img.logoSababa {
+	height: 67px;
+    width: auto;
+    margin-left: -39px;
+    margin-top: 3px;
+}
 
 /*======================
 ====Main Slider CSS=====
@@ -332,7 +337,7 @@ p.quote {
 #main-carousel .carousel-inner h2 {
 	color: #f6f6f6;
 	display: inline-block;
-	font-family: 'Lobster', cursive;
+	font-family: 'Concert One', cursive;
 	font-size: 55px;
 	font-weight: 800;
 	margin-bottom: 40px;
@@ -346,7 +351,7 @@ p.quote {
 
 #main-carousel .carousel-inner p {
 	color: #f6f6f6;
-	font-family: 'Lobster', cursive;
+	font-family: 'Concert One', cursive;
 	font-size: 24px;
 	font-weight: 300;
 	margin-bottom: 59px;
@@ -455,7 +460,7 @@ p.quote {
 	font-size:15px
 }
 .SababaCommunity{
-    font-family:'Lobster', cursive;
+    font-family:'Concert One', cursive;
     text-transform:none;
 
 }
