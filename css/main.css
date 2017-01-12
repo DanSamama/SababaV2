@@ -258,7 +258,8 @@ img.logoSababa {
 	height: 67px;
     width: auto;
     margin-left: -39px;
-    margin-top: 3px;
+	margin-top: -15px;
+    margin-bottom: -15px;
 }
 
 /*======================

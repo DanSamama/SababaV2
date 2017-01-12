@@ -11,16 +11,16 @@ $(document).ready(function(){
           // alert("Your are scrolling");
           $('#sababaNav').css('background-color', 'rgba(255,255,255,0.9');
           $('#sababaNav').css('border-radius', '10px');
-          $('#logoSab').css('border-radius', '13px');
-          $('#logoSab').css('background-color', '#91CCF4');
-          $('#logoSab').css('padding', '6px');
+          // $('#logoSab').css('border-radius', '13px');
+          // $('#logoSab').css('background-color', '#91CCF4');
+          // $('#logoSab').css('padding', '6px');
 
 
        } else {
           $('#sababaNav').css('background-color', 'transparent');
-          $('#logoSab').css('padding', '0px');
-          $('#logoSab').css('background-color', 'transparent');
-          $('#logoSab').css('border-radius', '0px');
+          // $('#logoSab').css('padding', '0px');
+          // $('#logoSab').css('background-color', 'transparent');
+          // $('#logoSab').css('border-radius', '0px');
        }
    });
 });
