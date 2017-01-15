@@ -54,8 +54,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .slider-btn:hover {
 	background-color:mediumspringgreen;
-	-webkit-box-shadow: inset 0 0 0 2px #43484E;
-	box-shadow: inset 0 0 0 2px mediumspringgreen;
+	-webkit-box-shadow: inset 0 0 0 2px #91CCF4;
+	box-shadow: inset 0 0 0 2px #91CCF4;
 	color:#fff
 }
 
@@ -412,7 +412,10 @@ p.quote {
 #main-carousel .carousel-right:hover{
 	color: #F6F6F6;
 }
-
+a.btn.btn-default.slider-btn.animated.fadeIn {
+    width: 226px;
+    margin-right: 18px;
+}
 
 
 /*=======================
@@ -461,8 +464,8 @@ p.quote {
 	font-size:15px
 }
 .SababaCommunity{
-    font-family:'Concert One', cursive;
     text-transform:none;
+	color: #91CCF4;
 
 }
 
